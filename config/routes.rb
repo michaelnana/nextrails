@@ -1,5 +1,7 @@
 Railsp1::Application.routes.draw do
   root :to => "home#index"
+  resources :users
+  match "/signup" => "users#new"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
